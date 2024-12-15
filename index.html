@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT BRAKE 1 - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dashboard-container">
+        <header>
+            <h1>PROJECT BRAKE 1 - Dashboard</h1>
+        </header>
+        
+        <!-- Reloj digital -->
+        <section id="clock-section">
+            <h2>Reloj Digital 24h + Fecha</h2>
+            <div id="horloge" class="horloge"></div>
+        </section>
+        
+        <!-- Generador de contraseñas seguras -->
+        <section id="password-section">
+            <h2>Generador de Contraseñas Seguras</h2>
+            <label for="numeros">Número de caracteres de la contraseña:</label>
+            <input type="number" id="numeros" min="8" max="32">
+            <button id="btnGen">Generar contraseña</button>
+            <div id="contraseña" class="contraseña"></div>
+        </section>
+        
+        <!-- Meteo Estación -->
+        <section id="weather-section">
+            <h2>Meteo Estación</h2>
+            <div id="City"></div>
+            <div id="Weatheratm"></div>
+            <div id="Gradenatm"></div>
+            <div id="Precipitacionesatm"></div>
+            <div id="Humedadatm"></div>
+            <div id="Vientoatm"></div>
+            <ul id="Hourlyforecast"></ul>
+        </section>
+    </div>
+
+    <script src="meteo.js"></script>
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
